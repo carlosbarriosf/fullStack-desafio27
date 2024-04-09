@@ -1,0 +1,23 @@
+.mobileMenu {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+    background-color: $color-background;
+    .mobileMenu__link {
+        background-color: $color-gray;
+        border-radius: 8px;
+        padding: 0.5rem;
+        width: 80%;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $color-gray-hover;
+        }
+    }
+}
