@@ -14,6 +14,12 @@ body {
     position: relative;
 }
 
+.App {
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
 // /* xs */
 @media (min-width: 475px) {
     .container {

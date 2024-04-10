@@ -16,7 +16,7 @@ function Header() {
             </div>
             <nav className='header__nav'>
                 <Link to="/" className='header__nav-link'>Inicio</Link>
-                <Link to="/" className='header__nav-link'>Catálogo</Link>
+                <Link to="/catalog" className='header__nav-link'>Catálogo</Link>
             </nav>
             <Button 
                 type='button'
