@@ -1,0 +1,15 @@
+.catalog {
+    .catalog__card-container {
+        display: grid;
+        margin: 1rem 0;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+        grid-template-rows: repeat(auto-fit, 350px);
+        grid-auto-rows: 350px;
+        justify-content: center;
+    }
+    .catalog__title {
+        font-size: $size-lg;
+        text-align: center;
+    }
+}

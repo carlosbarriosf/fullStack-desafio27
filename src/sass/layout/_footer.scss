@@ -1,6 +1,5 @@
 .footer {
     position: absolute;
-    bottom: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
@@ -14,6 +13,10 @@
         gap: 0.5rem;
         .footer__icon {
             color: white;
+            transition: all 0.3s;
+            &:hover {
+                color: $color-main;
+            }
         }
     }
 }

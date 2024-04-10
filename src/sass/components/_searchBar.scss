@@ -1,0 +1,43 @@
+.catalog__controls {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    .searchBar {
+        width: 284px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            color: white;
+            background-color: $color-gray-hover;
+            border-radius: 8px;
+            padding: 0.5rem 0.75rem;
+            width: 88%;
+            &::placeholder {
+                color: white;
+            }
+        }
+    }
+}
+
+// /* xs */
+// @media (min-width: 475px) {}
+
+// /* sm */
+// @media (min-width: 640px) {}
+
+// /* lg */
+@media (min-width: 768px) {
+    .catalog__controls {
+        justify-content: flex-start;
+    }
+}
+
+// /* xl */
+// @media (min-width: 1024px) {}
+
+// /* 2xl */
+// @media (min-width: 1280px) {}
+
+// /* 3xl */
+// @media (min-width: 1536px) {}

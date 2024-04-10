@@ -1,0 +1,11 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    .movieOverview {
+        
+        .movieOverview__image {
+            width: 200px;
+            border-radius: 8px;
+        }
+    }
+}
