@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { getMovies } from "../assets/api";
 import SearchBar from '../Components/SearchBar';
 import Card from '../Components/Card';
+import Footer from '../Components/Footer';
+
 
 function Catalog() {
 
@@ -10,7 +12,7 @@ function Catalog() {
     const [filteredMovies, setFilteredMovies] = useState(movies)
 
     useEffect(() => {
-        getMovies().then(data => setMovies(data)).catch(err => console.error(err))
+        getMovies('/movies').then(data => setMovies(data)).catch(err => console.error(err))
     }, [])
 
     useEffect(() => {
@@ -19,7 +21,7 @@ function Catalog() {
 
     return (
         <div className='catalog container'>
-            <h2 className='catalog__title'>Nuestra selección de películas</h2>
+            <h2 className='catalog__title' id='top'>Nuestra selección de películas</h2>
             <div className="catalog__controls">
                 <SearchBar
                     value={searchInput}
@@ -36,6 +38,8 @@ function Catalog() {
                     )
                 })}
             </div>
+            <a href="#top" className='backToTop'>Volver arriba</a>
+            <Footer />
         </div>
     )
 }

@@ -1,4 +1,6 @@
 .catalog {
+    padding-bottom: 4rem;
+    min-height: 95%;
     .catalog__card-container {
         display: grid;
         margin: 1rem 0;
@@ -11,5 +13,14 @@
     .catalog__title {
         font-size: $size-lg;
         text-align: center;
+    }
+    .backToTop {
+        position: fixed;
+        bottom: 50px;
+        right: 10px;
+        background-color: $color-main-hover;
+        border-radius: 6px;
+        cursor: pointer;
+        padding: 0.25rem;
     }
 }

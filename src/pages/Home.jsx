@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Footer from '../Components/Footer'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         con nosotros!
       </p>
       <Link to="/catalog" className='home__catalog'>Ir al catálogo</Link>
+      <Footer />
     </div>
   )
 }
