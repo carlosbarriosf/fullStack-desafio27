@@ -8,7 +8,7 @@ function SearchBar({value, action}) {
         <FaMagnifyingGlass size={20} />
         <input 
           type="search" 
-          placeholder='Buscar en la tienda' 
+          placeholder='Buscar película' 
           value={value} 
           onChange={action}
         />
